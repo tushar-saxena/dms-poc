@@ -9,7 +9,6 @@ class DmsService {
 
     def dynamicReportService
     AdapterInterface adapter
-//    String json = '{ \n    "dmsName":"alfresco",\n    "login":"admin",\n    "password":"admin",\n    "cmisUrl":"http://10.100.22.143:7080/alfresco/api/-default-/public/cmis/versions/1.1/browser",\n    "repositoryId":"-default-",\n    "rootFolder":"/Published",\n    "documentTypeId":"cmis:document",\n    "nameId":"cmis:name",\n    "descriptionId":"cmis:description"\n}'
     String json = '{ \n    "dmsName":"alfresco",\n    "login":"admin",\n    "password":"admin",\n    "cmisUrl":"http://127.0.0.1:8080/alfresco/api/-default-/public/cmis/versions/1.1/browser",\n    "repositoryId":"-default-",\n    "rootFolder":"/Published",\n    "documentTypeId":"cmis:document",\n    "nameId":"cmis:name",\n    "descriptionId":"cmis:description"\n}'
 
     def upload(File reportFile, String subfolder, String name, String description, String tag, String sensitivity, String author) {
